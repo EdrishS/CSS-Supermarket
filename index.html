@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SUPERMARKET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <div class="top-header" style="display: flex; justify-content: center;">
+                <h1>CSS SUPERMARKET</h1>
+            </div>
+            <div class="header-middle">
+                <div class="nav-items">
+                    <label>
+                        <a>Home</a>
+                    </label>
+                    <label><a>Fresh Items</a></label>
+                    <label class="nav-item"> 
+                        <a>Frozen Items</a>
+                    </label>
+                    <label><a>About</a></label>
+                </div>
+
+                <div class="header-right">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search items..." class="search-input">
+                        <button class="search-button">🔍</button>
+                    </div>
+                    <span>MY BAG (3)</span>
+                    <span>Profile</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="shopping-bag">
+            <h2>MY SHOPPING BAG</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>PRODUCT</th>
+                        <th>PRICE</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="watch1.jpg" alt="FRUITS">
+                            <div class="product-details">
+                                <strong>FERGUS STRAP FRUITS 42MM</strong>
+                                <p>ITEM NO: 796483117334</p>
+                                <p>SIZE: OS</p>
+                                <p>COLOR: SILVER/BLACK/TAN</p>
+                                <p>QTY: 1</p>
+                                <a href="#">REMOVE</a> | <a href="#">EDIT</a>
+                            </div>
+                        </td>
+                        <td><span class="price">$425.00</span> $297.50</td>
+                        <td>$297.50</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="bag.jpg" alt="VEGETABLES">
+                            <div class="product-details">
+                                <strong>NEW Q ZIPPERS HUGE VEGETABLES</strong>
+                                <p>ITEM NO: 888877826172</p>
+                                <p>SIZE: 1SZ</p>
+                                <p>COLOR: BLACK MULTI</p>
+                                <p>QTY: 1</p>
+                                <a href="#">REMOVE</a> | <a href="#">EDIT</a>
+                            </div>
+                        </td>
+                        <td>$598.00</td>
+                        <td>$598.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="watch2.jpg" alt="Baker 36mm">
+                            <div class="product-details">
+                                <strong>CHICKEN 36MM</strong>
+                                <p>ITEM NO: 696483021949</p>
+                                <p>SIZE: OS</p>
+                                <p>COLOR: BLACK</p>
+                                <p>QTY: 1</p>
+                                <a href="#">REMOVE</a> | <a href="#">EDIT</a>
+                            </div>
+                        </td>
+                        <td>$195.00</td>
+                        <td>$195.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <aside class="summary">
+            <h2>SUMMARY</h2>
+            <div class="promo-code">
+                <label for="promo">Do you have a promo code?</label>
+                <input type="text" id="promo" placeholder="Enter promo code">
+                <button>APPLY</button>
+            </div>
+            <div class="totals">
+                <div class="subtotal">
+                    <span>SUBTOTAL</span>
+                    <span>$1,090.50</span>
+                </div>
+                <div class="shipping">
+                    <span>Shipping</span>
+                    <span>TBD</span>
+                </div>
+                <div class="tax">
+                    <span>Sales Tax <i class="info">i</i></span>
+                    <span>TBD</span>
+                </div>
+                <div class="estimated-total">
+                    <span>ESTIMATED TOTAL</span>
+                    <span>$1,090.50</span>
+                </div>
+            </div>
+            <button class="checkout-button">CHECKOUT</button>
+            <p>Need help? Call us at 1-877-707-6272</p>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">CSS Sup Mart Stories</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Group Companies</h4>
+                <ul>
+                    <li><a href="#">Myntra</a></li>
+                    <li><a href="#">Cleartrip</a></li>
+                    <li><a href="#">Shopsy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Report Infringement</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Consumer Policy</h4>
+                <ul>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Grievance Redressal</a></li>
+                    <li><a href="#">EPR Compliance</a></li>
+                </ul>
+            </div>
+            <div class="footer-section address">
+                <h4>Mail Us:</h4>
+                <p>
+                    CSS Sup Mart Internet Private Limited,<br>
+                    Super Towers, Begonia &<br>
+                    100 feet Road,<br>
+                    Outer Ring Road, Devarabeesanahalli Village,<br>
+                    Madhapur, 560103,<br>
+                    Telagana, India
+                </p>
+            </div>
+            <!-- <h4>Registered Office Address:</h4>
+            </div>
+            <div class="registration-content">
+                <p>
+                    CSS Sup Mart Internet Private Limited,<br>
+                    Super Towers, Begonia &<br>
+                    100 feet Road,<br>
+                    Outer Ring Road, Hitech City,<br>
+                    Madhapur, 560103,<br>
+                    Telagana, India<br>
+                    CIN : U51109KA2012PTC066107<br>
+                    Telephone: 044-45614700 / 044-67451800
+                </p>
+            </div> -->
+            <div class="social">
+                <a href="#"><img src="img/facebook.jpg" alt="Facebook"></a>
+                <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+                <a
+                    href="https://www.google.com/maps/place/Hyderabad,+Telangana/@17.4120779,78.0783859,10z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!8m2!3d17.406498!4d78.4772439!16zL20vMDljNnc?entry=ttu"><img
+                        src="img/map.png" alt="YouTube"></a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="#">Become a Seller</a>
+            <a href="#">Advertise</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Help Center</a>
+            <p>© 2007-2024 CSS Sup Mart.com</p>
+            <div class="payment-options">
+                <img src="img/visa img.png" alt="Visa">
+                <img src="img/mastercard.png" alt="MasterCard">
+                <img src="img/american experess.png" alt="American Express">
+                <img src="img/rupay.png" alt="RuPay">
+                <img src="img/netbanking.webp" alt="Net Banking">
+                <img src="img/cashondelivery.jpg" alt="Cash on Delivery">
+                <img src="img/easyemi.png" alt="Easy EMI">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
