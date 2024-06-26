@@ -1,33 +1,31 @@
 let cart = [];
-let total = 0;
 
-function addToCart(name, price) {
-    cart.push({ name, price });
-    total += price;
+function addToCart(product, price) {
+    cart.push({ product, price });
     updateCart();
 }
 
 function updateCart() {
-    const cartItems = document.getElementById('cart-items');
-    const cartTotal = document.getElementById('cart-total');
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotalElement = document.getElementById('cart-total');
+    cartItemsContainer.innerHTML = '';
 
-    if (cart.length === 0) {
-        cartItems.innerHTML = '<p>No items in the cart.</p>';
-    } else {
-        cartItems.innerHTML = '';
-        cart.forEach(item => {
-            const itemElement = document.createElement('div');
-            itemElement.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-            cartItems.appendChild(itemElement);
-        });
-    }
+    let total = 0;
+    cart.forEach(item => {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+            <p>${item.product}</p>
+            <p>$${item.price.toFixed(2)}</p>
+        `;
+        cartItemsContainer.appendChild(cartItem);
+        total += item.price;
+    });
 
-    cartTotal.textContent = total.toFixed(2);
+    cartTotalElement.textContent = total.toFixed(2);
 }
 
 function checkout() {
-    alert(`Your total is $${total.toFixed(2)}. Thank you for your purchase!`);
-    cart = [];
-    total = 0;
-    updateCart();
+    alert('Proceeding to checkout...');
+    // Implement checkout logic here
 }

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS SUPERMARKET</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
 
@@ -17,135 +19,95 @@
             <div class="top-header" style="display: flex; justify-content: center;">
                 <h1>CSS SUPERMARKET</h1>
             </div>
-            <div class="header-middle">
-                <div class="nav-items">
-                    <label>
-                        <a class="nav-content" href="index.html">Home</a>
-                    </label>
-                    <label class="dropdown">
-                        <a class="nav-content" href="freshitems.html">Fresh Items</a>
-                        <div class="dropdown-content">
-                            <a href="vegitem.html">Vegetables</a>
-                            <a href="fruitem.html">Fruits</a>
-                        </div>
-                    </label>
-                    <label class="dropdown">
-                        <a class="nav-content" href="frozenitems.html">Frozen Items</a>
-                        <div class="dropdown-content">
-                            <a href="chicken.html">Chicken</a>
-                            <a href="mutton.html">Mutton</a>
-                            <a href="seafood.html">Sea Food</a>
-                        </div>
-                    </label>
-                    <label>
-                        <a class="nav-content" href="veg.html">About</a>
-                    </label>
-                </div>
-
-                <div class="header-right">
-                    <div class="search-container">
-                        <input type="text" placeholder="Search items..." class="search-input">
-                        <button class="search-button">🔍</button>
+    </header>
+    <nav>
+        <div class="header-middle" style="padding: 4px;">
+            <div class="nav-items">
+                <label>
+                    <a class="nav-content" href="index.html" style="padding: 1px;">Home</a>
+                </label>
+                <label class="dropdown">
+                    <a class="nav-content" href="#" style="padding: 1px;">Fresh Items</a>
+                    <div class="dropdown-content">
+                        <a href="vegitem.html">Vegetables</a>
+                        <a href="fruitem.html">Fruits</a>
                     </div>
-                    <label>
-                        <a class="nav-content" href="cart.html">MY BAG</a>
-                    </label>
-                    <label>
-                        <a class="nav-content" href="index.html">Profile</a>
-                    </label>
+                </label>
+                <label class="dropdown">
+                    <a class="nav-content" href="frozenitems.html" style="padding: 1px;">Frozen Items</a>
+                    <div class="dropdown-content">
+                        <a href="chicken.html">Chicken</a>
+                        <a href="mutton.html">Mutton</a>
+                        <a href="seafood.html">Sea Food</a>
+                    </div>
+                </label>
+                <label>
+                    <a class="nav-content" href="about.html" style="padding: 1px;">About</a>
+                </label>
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search items..." class="search-input">
+                    <button class="search-button">🔍</button>
+                </div>
+                <label>
+                    <a class="nav-content" href="cart.html">MY BAG</a>
+                </label>
+                <label>
+                    <a class="nav-content" href="profile.html">Profile</a>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <div class="box" style="display: flex;">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div id="carouselSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-50" src="slider/slide1.avif" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-50" src="slider/slide2.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-50" src="slider/slide3.jpg" alt="Third slide">
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <main>
-        <section class="shopping-bag">
-            <h2>MY SHOPPING BAG</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>PRODUCT</th>
-                        <th>PRICE</th>
-                        <th>TOTAL</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="watch1.jpg" alt="FRUITS">
-                            <div class="product-details">
-                                <strong>FERGUS STRAP FRUITS 42MM</strong>
-                                <p>ITEM NO: 796483117334</p>
-                                <p>SIZE: OS</p>
-                                <p>COLOR: SILVER/BLACK/TAN</p>
-                                <p>QTY: 1</p>
-                                <a href="#">REMOVE</a> | <a href="#">EDIT</a>
-                            </div>
-                        </td>
-                        <td><span class="price">$425.00</span> $297.50</td>
-                        <td>$297.50</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="bag.jpg" alt="VEGETABLES">
-                            <div class="product-details">
-                                <strong>NEW Q ZIPPERS HUGE VEGETABLES</strong>
-                                <p>ITEM NO: 888877826172</p>
-                                <p>SIZE: 1SZ</p>
-                                <p>COLOR: BLACK MULTI</p>
-                                <p>QTY: 1</p>
-                                <a href="#">REMOVE</a> | <a href="#">EDIT</a>
-                            </div>
-                        </td>
-                        <td>$598.00</td>
-                        <td>$598.00</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="watch2.jpg" alt="Baker 36mm">
-                            <div class="product-details">
-                                <strong>CHICKEN 36MM</strong>
-                                <p>ITEM NO: 696483021949</p>
-                                <p>SIZE: OS</p>
-                                <p>COLOR: BLACK</p>
-                                <p>QTY: 1</p>
-                                <a href="#">REMOVE</a> | <a href="#">EDIT</a>
-                            </div>
-                        </td>
-                        <td>$195.00</td>
-                        <td>$195.00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <aside class="summary">
-            <h2>SUMMARY</h2>
-            <div class="promo-code">
-                <label for="promo">Do you have a promo code?</label>
-                <input type="text" id="promo" placeholder="Enter promo code">
-                <button>APPLY</button>
+        <div class="text">
+            WELCOME TO <br>
+            CSS SUPER MARKET
+        </div>
+    </div>
+    <!-- <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="slider/slide1.avif" class="d-block w-100" alt="..." height="800px">
+                </div>
+                <div class="carousel-item">
+                    <img src="slider/slide2.png" class="d-block w-100" alt="..." height="800px">
+                </div>
+                <div class="carousel-item">
+                    <img src="slider/slide3.jpg" class="d-block w-100" alt="..." height="800px">
+                </div>
+                <div class="carousel-item">
+                    <img src="slidelogo4.jpeg" class="d-block w-100" alt="..." height="800px">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="totals">
-                <div class="subtotal">
-                    <span>SUBTOTAL</span>
-                    <span>$1,090.50</span>
-                </div>
-                <div class="shipping">
-                    <span>Shipping</span>
-                    <span>TBD</span>
-                </div>
-                <div class="tax">
-                    <span>Sales Tax <i class="info">i</i></span>
-                    <span>TBD</span>
-                </div>
-                <div class="estimated-total">
-                    <span>ESTIMATED TOTAL</span>
-                    <span>$1,090.50</span>
-                </div>
-            </div>
-            <button class="checkout-button">CHECKOUT</button>
-            <p>Need help? Call us at 1-877-707-6272</p>
-        </aside>
-    </main>
+        </div> -->
+        
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -241,6 +203,12 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

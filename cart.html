@@ -89,92 +89,55 @@
             <div class="top-header" style="display: flex; justify-content: center;">
                 <h1>CSS SUPERMARKET</h1>
             </div>
-            <div class="header-middle">
-                <div class="nav-items">
-                    <label>
-                        <a class="nav-content" href="index.html">Home</a>
-                    </label>
-                    <label class="dropdown">
-                        <a class="nav-content" href="freshitems.html">Fresh Items</a>
-                        <div class="dropdown-content">
-                            <a href="vegitem.html">Vegetables</a>
-                            <a href="fruitem.html">Fruits</a>
-                        </div>
-                    </label>
-                    <label class="dropdown">
-                        <a class="nav-content" href="frozenitems.html">Frozen Items</a>
-                        <div class="dropdown-content">
-                            <a href="chicken.html">Chicken</a>
-                            <a href="mutton.html">Mutton</a>
-                            <a href="seafood.html">Sea Food</a>
-                        </div>
-                    </label>
-                    <label>
-                        <a class="nav-content" href="veg.html">About</a>
-                    </label>
-                </div>
-
-                <div class="header-right">
-                    <div class="search-container">
-                        <input type="text" placeholder="Search items..." class="search-input">
-                        <button class="search-button">🔍</button>
+    </header>
+    <nav>
+        <div class="header-middle" style="padding: 4px;">
+            <div class="nav-items">
+                <label>
+                    <a class="nav-content" href="index.html" style="padding: 1px;">Home</a>
+                </label>
+                <label class="dropdown">
+                    <a class="nav-content" href="#" style="padding: 1px;">Fresh Items</a>
+                    <div class="dropdown-content">
+                        <a href="vegitem.html">Vegetables</a>
+                        <a href="fruitem.html">Fruits</a>
                     </div>
-                    <label>
-                        <a class="nav-content" href="cart.html">MY BAG</a>
-                    </label>
-                    <label>
-                        <a class="nav-content" href="index.html">Profile</a>
-                    </label>
+                </label>
+                <label class="dropdown">
+                    <a class="nav-content" href="frozenitems.html" style="padding: 1px;">Frozen Items</a>
+                    <div class="dropdown-content">
+                        <a href="chicken.html">Chicken</a>
+                        <a href="mutton.html">Mutton</a>
+                        <a href="seafood.html">Sea Food</a>
+                    </div>
+                </label>
+                <label>
+                    <a class="nav-content" href="about.html" style="padding: 1px;">About</a>
+                </label>
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search items..." class="search-input">
+                    <button class="search-button">🔍</button>
                 </div>
+                <label>
+                    <a class="nav-content" href="cart.html">MY BAG</a>
+                </label>
+                <label>
+                    <a class="nav-content" href="profile.html">Profile</a>
+                </label>
             </div>
         </div>
-    </header>
+    </nav>
     <main>
         <h2>MY SHOPPING BAG</h2>
         <div class="cart">
-            <div class="cart-item">
-                <img src="watch1.jpg" alt="Fergus Strap Automatic 42mm">
-                <div class="item-details">
-                    <h3>FERGUS STRAP AUTOMATIC 42MM</h3>
-                    <p>Item No: 796483117334</p>
-                    <p>Size: OS</p>
-                    <p>Color: Silver/Black/Tan</p>
-                    <p>Qty: 1</p>
-                    <p><a href="#">Remove</a> | <a href="#">Edit</a></p>
-                </div>
-                <div class="item-price">
-                    <p class="original-price">$425.00</p>
-                    <p class="discounted-price">$297.50</p>
-                </div>
+            <div id="cart-items">
+                <!-- Items will be added here -->
             </div>
-            <div class="cart-item">
-                <img src="bag.jpg" alt="New Q Zippers Huge Hillier Hobo">
-                <div class="item-details">
-                    <h3>NEW Q ZIPPERS HUGE HILLIER HOBO</h3>
-                    <p>Item No: 888877826172</p>
-                    <p>Size: 1SZ</p>
-                    <p>Color: Black Multi</p>
-                    <p>Qty: 1</p>
-                    <p><a href="#">Remove</a> | <a href="#">Edit</a></p>
-                </div>
-                <div class="item-price">
-                    <p>$598.00</p>
-                </div>
-            </div>
-            <div class="cart-item">
-                <img src="watch2.jpg" alt="Baker 36mm">
-                <div class="item-details">
-                    <h3>BAKER 36MM</h3>
-                    <p>Item No: 8887463029149</p>
-                    <p>Size: OS</p>
-                    <p>Color: Black</p>
-                    <p>Qty: 1</p>
-                    <p><a href="#">Remove</a> | <a href="#">Edit</a></p>
-                </div>
-                <div class="item-price">
-                    <p>$195.00</p>
-                </div>
-            </div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
         </div>
         <aside class="summary">
             <h3>SUMMARY</h3>
@@ -184,10 +147,10 @@
                 <button>Apply</button>
             </div>
             <div class="totals">
-                <p>Subtotal: $1,090.50</p>
+                <p>Subtotal: $<span id="cart-total">0.00</span></p>
                 <p>Shipping: TBD</p>
                 <p>Sales Tax: TBD</p>
-                <p>Estimated Total: $1,090.50</p>
+                <p>Estimated Total: $<span id="cart-total">0.00</span></p>
             </div>
             <button class="checkout">Checkout</button>
             <p class="help">Need help? Call us at 1-877-707-6272</p>
@@ -298,6 +261,8 @@
             </div>
         </div>
     </footer>
+
+    
 </body>
 
 </html>
