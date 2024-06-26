@@ -15,115 +15,120 @@
             <div class="top-header" style="display: flex; justify-content: center;">
                 <h1>CSS SUPERMARKET</h1>
             </div>
-            <div class="header-middle">
-                <div class="nav-items">
-                    <label>
-                        <a class="nav-content" href="index.html">Home</a>
-                    </label>
-                    <label class="dropdown">
-                        <a class="nav-content" href="freshitems.html">Fresh Items</a>
-                        <div class="dropdown-content">
-                            <a href="vegitem.html">Vegetables</a>
-                            <a href="fruitem.html">Fruits</a>
-                        </div>
-                    </label>
-                    <label class="dropdown">
-                        <a class="nav-content" href="frozenitems.html">Frozen Items</a>
-                        <div class="dropdown-content">
-                            <a href="chicken.html">Chicken</a>
-                            <a href="mutton.html">Mutton</a>
-                            <a href="seafood.html">Sea Food</a>
-                        </div>
-                    </label>
-                    <label>
-                        <a class="nav-content" href="veg.html">About</a>
-                    </label>
-                </div>
-
-                <div class="header-right">
-                    <div class="search-container">
-                        <input type="text" placeholder="Search items..." class="search-input">
-                        <button class="search-button">🔍</button>
+    </header>
+    <nav>
+        <div class="header-middle" style="padding: 4px;">
+            <div class="nav-items">
+                <label>
+                    <a class="nav-content" href="index.html" style="padding: 1px;">Home</a>
+                </label>
+                <label class="dropdown">
+                    <a class="nav-content" href="#" style="padding: 1px;">Fresh Items</a>
+                    <div class="dropdown-content">
+                        <a href="vegitem.html">Vegetables</a>
+                        <a href="fruitem.html">Fruits</a>
                     </div>
-                    <span>MY BAG (3)</span>
-                    <span>Profile</span>
+                </label>
+                <label class="dropdown">
+                    <a class="nav-content" href="frozenitems.html" style="padding: 1px;">Frozen Items</a>
+                    <div class="dropdown-content">
+                        <a href="chicken.html">Chicken</a>
+                        <a href="mutton.html">Mutton</a>
+                        <a href="seafood.html">Sea Food</a>
+                    </div>
+                </label>
+                <label>
+                    <a class="nav-content" href="about.html" style="padding: 1px;">About</a>
+                </label>
+            </div>
+
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search items..." class="search-input">
+                    <button class="search-button">🔍</button>
                 </div>
+                <label>
+                    <a class="nav-content" href="cart.html">MY BAG</a>
+                </label>
+                <label>
+                    <a class="nav-content" href="profile.html">Profile</a>
+                </label>
             </div>
         </div>
-    </header>
+    </nav>
     <main>
         <section class="products">
             <div class="product">
                 <img src="fruits/apple.jpg" alt="Apple">
                 <h3>Apple</h3>
                 <p>$610.00</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Apple', 610.00)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="fruits/banana.webp" alt="Banana">
                 <h3>Banana</h3>
                 <p>$198.99</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Banana', 198.99)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="fruits/cherry.webp" alt="Cherry">
                 <h3>Cherry</h3>
                 <p>$125.99</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Cherry', 125.99)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="fruits/dragon.jpg" alt="Dragon">
                 <h3>Dragon</h3>
                 <p>$129.99</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Dragon', 129.99)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="fruits/grapes.jpg" alt="Grapes">
                 <h3>Grapes</h3>
                 <p>$720.00</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Grapes', 720.00)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="fruits/kiwi.jpg" alt="Kiwi">
                 <h3>Kiwi</h3>
                 <p>$149.00</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Kiwi', 149.00)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="fruits/mango.jpeg" alt="Mango">
                 <h3>Mango</h3>
                 <p>$229.00</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Mango', 229.00)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="veg/green beans.jpg" alt="green beans">
                 <h3>Green Beans</h3>
                 <p>$629.99</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Green Beans', 629.99)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="fruits/orange.webp" alt="Orange">
                 <h3>Orange</h3>
                 <p>$1099.99</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Orange', 1099.99)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="fruits/papaya.jpg" alt="Papaya">
                 <h3>Papaya</h3>
                 <p>$1099.99</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Papaya', 1099.99)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="fruits/pineapple.jpg" alt="Pineapple" width="342px">
                 <h3>Pineapple</h3>
                 <p>$1099.99</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Pineapple', 1099.99)">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="fruits/pomegranate.jpeg" alt="Pomegranate">
                 <h3>Pomegranate</h3>
                 <p>$1099.99</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Pomegranate', 1099.99)">Add to Cart</button>
             </div>
         </section>
         <!-- <aside>
@@ -267,6 +272,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
