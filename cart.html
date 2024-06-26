@@ -6,12 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS SUPERMARKET</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="cart.css">
 </head>
 
 <body>
+    <!-- <section class="products">
+        <div class="product">
+            <img src="veg/Brinjal.jpg" alt="Brinjal">
+            <h3>Brinjal</h3>
+            <p>$610.00</p>
+            <button onclick="addToCart('Brinjal', 610.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/broccoli.jpg" alt="Broccoli">
+            <h3>Broccoli</h3>
+            <p>$198.99</p>
+            <button onclick="addToCart('Broccoli', 198.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/cabbage.jpg" alt="Cabbage">
+            <h3>Cabbage</h3>
+            <p>$125.99</p>
+            <button onclick="addToCart('Cabbage', 125.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/capsicum.jpg" alt="Capsicum">
+            <h3>Capsicum</h3>
+            <p>$129.99</p>
+            <button onclick="addToCart('Capsicum', 129.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/carrot.webp" alt="Carrot">
+            <h3>Carrot</h3>
+            <p>$720.00</p>
+            <button onclick="addToCart('Carrot', 720.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/cauliflower.jpg" alt="Cauliflower">
+            <h3>Cauliflower</h3>
+            <p>$149.00</p>
+            <button onclick="addToCart('Cauliflower', 149.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/cucumber.jpg" alt="cucumber">
+            <h3>Cucumber</h3>
+            <p>$229.00</p>
+            <button onclick="addToCart('Cucumber', 229.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/green beans.jpg" alt="green beans">
+            <h3>Green Beans</h3>
+            <p>$629.99</p>
+            <button onclick="addToCart('Green Beans', 629.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/onion.avif" alt="Onion">
+            <h3>Onion</h3>
+            <p>$1099.99</p>
+            <button onclick="addToCart('Onion', 1099.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/potato.webp" alt="Potato">
+            <h3>Potato</h3>
+            <p>$1099.99</p>
+            <button onclick="addToCart('Potato', 1099.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/spinach.jpg" alt="Spinach" width="342px">
+            <h3>Spinach</h3>
+            <p>$1099.99</p>
+            <button onclick="addToCart('Spinach', 1099.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veg/tomato.jpg" alt="Tomato">
+            <h3>Tomato</h3>
+            <p>$1099.99</p>
+            <button onclick="addToCart('Tomato', 1099.99)">Add to Cart</button>
+        </div>
+    </section> -->
     <header class="header">
         <div>
             <div class="top-header" style="display: flex; justify-content: center;">
@@ -58,94 +130,79 @@
         </div>
     </header>
     <main>
-        <section class="shopping-bag">
-            <h2>MY SHOPPING BAG</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>PRODUCT</th>
-                        <th>PRICE</th>
-                        <th>TOTAL</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="watch1.jpg" alt="FRUITS">
-                            <div class="product-details">
-                                <strong>FERGUS STRAP FRUITS 42MM</strong>
-                                <p>ITEM NO: 796483117334</p>
-                                <p>SIZE: OS</p>
-                                <p>COLOR: SILVER/BLACK/TAN</p>
-                                <p>QTY: 1</p>
-                                <a href="#">REMOVE</a> | <a href="#">EDIT</a>
-                            </div>
-                        </td>
-                        <td><span class="price">$425.00</span> $297.50</td>
-                        <td>$297.50</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="bag.jpg" alt="VEGETABLES">
-                            <div class="product-details">
-                                <strong>NEW Q ZIPPERS HUGE VEGETABLES</strong>
-                                <p>ITEM NO: 888877826172</p>
-                                <p>SIZE: 1SZ</p>
-                                <p>COLOR: BLACK MULTI</p>
-                                <p>QTY: 1</p>
-                                <a href="#">REMOVE</a> | <a href="#">EDIT</a>
-                            </div>
-                        </td>
-                        <td>$598.00</td>
-                        <td>$598.00</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="watch2.jpg" alt="Baker 36mm">
-                            <div class="product-details">
-                                <strong>CHICKEN 36MM</strong>
-                                <p>ITEM NO: 696483021949</p>
-                                <p>SIZE: OS</p>
-                                <p>COLOR: BLACK</p>
-                                <p>QTY: 1</p>
-                                <a href="#">REMOVE</a> | <a href="#">EDIT</a>
-                            </div>
-                        </td>
-                        <td>$195.00</td>
-                        <td>$195.00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <h2>MY SHOPPING BAG</h2>
+        <div class="cart">
+            <div class="cart-item">
+                <img src="watch1.jpg" alt="Fergus Strap Automatic 42mm">
+                <div class="item-details">
+                    <h3>FERGUS STRAP AUTOMATIC 42MM</h3>
+                    <p>Item No: 796483117334</p>
+                    <p>Size: OS</p>
+                    <p>Color: Silver/Black/Tan</p>
+                    <p>Qty: 1</p>
+                    <p><a href="#">Remove</a> | <a href="#">Edit</a></p>
+                </div>
+                <div class="item-price">
+                    <p class="original-price">$425.00</p>
+                    <p class="discounted-price">$297.50</p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="bag.jpg" alt="New Q Zippers Huge Hillier Hobo">
+                <div class="item-details">
+                    <h3>NEW Q ZIPPERS HUGE HILLIER HOBO</h3>
+                    <p>Item No: 888877826172</p>
+                    <p>Size: 1SZ</p>
+                    <p>Color: Black Multi</p>
+                    <p>Qty: 1</p>
+                    <p><a href="#">Remove</a> | <a href="#">Edit</a></p>
+                </div>
+                <div class="item-price">
+                    <p>$598.00</p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="watch2.jpg" alt="Baker 36mm">
+                <div class="item-details">
+                    <h3>BAKER 36MM</h3>
+                    <p>Item No: 8887463029149</p>
+                    <p>Size: OS</p>
+                    <p>Color: Black</p>
+                    <p>Qty: 1</p>
+                    <p><a href="#">Remove</a> | <a href="#">Edit</a></p>
+                </div>
+                <div class="item-price">
+                    <p>$195.00</p>
+                </div>
+            </div>
+        </div>
         <aside class="summary">
-            <h2>SUMMARY</h2>
+            <h3>SUMMARY</h3>
             <div class="promo-code">
-                <label for="promo">Do you have a promo code?</label>
-                <input type="text" id="promo" placeholder="Enter promo code">
-                <button>APPLY</button>
+                <label for="promo-code">Do you have a promo code?</label>
+                <input type="text" id="promo-code">
+                <button>Apply</button>
             </div>
             <div class="totals">
-                <div class="subtotal">
-                    <span>SUBTOTAL</span>
-                    <span>$1,090.50</span>
-                </div>
-                <div class="shipping">
-                    <span>Shipping</span>
-                    <span>TBD</span>
-                </div>
-                <div class="tax">
-                    <span>Sales Tax <i class="info">i</i></span>
-                    <span>TBD</span>
-                </div>
-                <div class="estimated-total">
-                    <span>ESTIMATED TOTAL</span>
-                    <span>$1,090.50</span>
-                </div>
+                <p>Subtotal: $1,090.50</p>
+                <p>Shipping: TBD</p>
+                <p>Sales Tax: TBD</p>
+                <p>Estimated Total: $1,090.50</p>
             </div>
-            <button class="checkout-button">CHECKOUT</button>
-            <p>Need help? Call us at 1-877-707-6272</p>
+            <button class="checkout">Checkout</button>
+            <p class="help">Need help? Call us at 1-877-707-6272</p>
         </aside>
     </main>
+    </div>
+    <!-- <section class="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items">
+            <p>No items in the cart.</p>
+        </div>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+    <script src="script.js"></script> -->
     <footer>
         <div class="footer-container">
             <div class="footer-section">
